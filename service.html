@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UpStyle - Fashion Upcycling</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        @keyframes spinnerFade {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+
+        #spinner {
+            animation: spinnerFade 2s forwards;
+        }
+
+        .spinner-border {
+            width: 8rem;
+            height: 8rem;
+        }
+
+        /* Navbar styling for profile image */
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            /* Align items vertically */
+        }
+
+        /* Profile Image Styling */
+        .profile-icon {
+            font-size: 30px;
+            /* Adjust the size of the profile icon */
+            color: #333;
+            /* Default color */
+            transition: color 0.3s ease;
+            /* Smooth transition for color change */
+        }
+
+        .profile-icon:hover {
+            color: #9EBDE3;
+            /* Color when hovered */
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: "Mulbena";
+            src: url("fonts/Mulbena.otf") format("truetype");
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        h1 {
+            font-family: "Mulbena", sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index2.html" class="navbar-brand p-0">
+                <h1 class="display-6 text-primary m-0">
+                    <img src="img/recycling.png" alt="Recycling Icon" width="50" class="me-1"
+                        style="vertical-align: middle; position: relative; top: -3px;">
+                    <span style="display: inline-block;">UPSTYLE</span>
+                </h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index2.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link active">Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="feature.html" class="dropdown-item">Features</a>
+                            <a href="reward.html" class="dropdown-item">Reward</a>
+                            <a href="blog.html" class="dropdown-item">Blog</a>
+
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+            </div>
+            <!-- Profile Icon -->
+            <a href="profile.html">
+                <i class="fas fa-user profile-icon"></i>
+            </a>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <ul class="breadcrumb-animation">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h1>
+                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item">Explore our eco-friendly services, from upcycling fashion waste to
+                        sustainable clothing consultations and responsible disposal solutions.</a></li>
+                </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid service py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                <h4 class="mb-1 text-primary">Our Service</h4>
+                <h1 class="display-5 mb-4">Turn your old clothes into something more valuable!</h1>
+                <p style="font-size: 1.2rem; " class="mb-0">Have clothes that you no longer wear? Don't throw them away!
+                    We help turn them into more
+                    valuable items, either through upcycling, donation or resale. With this service, you can reduce
+                    fashion waste while reaping economic and environmental benefits.
+
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center rounded p-4">
+                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i
+                                class="fas fa-solid fa-book fa-5x text-success"></i></div>
+                        <div class="service-content text-center">
+                            <h4 class="mb-4"><b>Eco-Guide</b></h4>
+                            <p class="mb-2 text-center">Discover sustainable fashion tips and eco-friendly habits in one
+                                complete guide. Learn to upcycle old clothes and extend your
+                                wardrobe’s life. Reduce waste by choosing ethical brands, embracing secondhand fashion,
+                                and making mindful choices. Then together we can build a greener, more sustainable
+                                future in fashion.</p>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center rounded p-4">
+                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i
+                                class="fas fa-thumbs-up fa-5x text-info"></i></div>
+                        <div class="service-content">
+                            <h4 class="mb-4"><b>Consultation</b></h4>
+                            <p class="mb-4">Get expert advice on upcycling, donations, and reducing fashion waste
+                                effectively. Discover creative ways to turn old clothes into stylish pieces, choose the
+                                best donation options, and adopt sustainable habits. Make a lasting impact on the planet
+                                by embracing smarter, more eco-friendly fashion choices every day.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center rounded p-4">
+                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i
+                                class="fas fa-solid fa-layer-group fa-5x text-warning"></i></div>
+                        <div class="service-content">
+                            <h4 class="mb-4"><b>Workshop</b></h4>
+                            <p class="mb-4">Join fun and interactive sessions to learn upcycling techniques from
+                                experts! Explore creative ways to repurpose old clothes, try exciting DIY fashion
+                                projects, and gain hands-on experience in sustainable design. Connect with a community,
+                                get inspired, and make a positive impact on the environment through fashion.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center rounded p-4">
+                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i
+                                class="fas fa-solid fa-bell fa-5x text-info"></i></div>
+                        <div class="service-content">
+                            <h4 class="mb-4"><b>Notification</b></h4>
+                            <p class="mb-4">Stay updated with the latest challenges, events, sustainability trends!
+                                Discover eco-friendly initiatives, join engaging activities, connect with a
+                                passionate community. Get inspired by fresh ideas, learn practical tips, and take
+                                meaningful actions to create a greener, responsible future in fashion and everyday
+                                life.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center rounded p-4">
+                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i
+                                class="fas fa-solid fa-seedling fa-5x text-success"></i></div>
+                        <div class="service-content">
+                            <h4 class="mb-4"><b>Environment Tracking</b></h4>
+                            <p class="mb-4">Monitor and track your eco-friendly impact with ease! Stay aware of how your
+                                actions reduce waste, conserve resources, and contribute to a greener lifestyle.
+                                Celebrate milestones, measure progress, and stay motivated to make a lasting difference.
+                                Every step counts toward a sustainable future!
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center rounded p-4">
+                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i
+                                class="fas fa-solid fa-hand-holding-heart fa-5x text-danger"></i></div>
+                        <div class="service-content">
+                            <h4 class="mb-4"><b>Eco-Impact Personal</b></h4>
+                            <p class="mb-4">Earn rewards and achievements for every sustainable action you take with us!
+                                Whether you donate clothes, upcycle fashion, or raise awareness, your efforts matter.
+                                Collect points, unlock badges, and enjoy exclusive perks while contributing to a greener
+                                future. Every small step creates a lasting impact on sustainability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- FAQ Start -->
+    <div class="container-fluid FAQ bg-light overflow-hidden py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item border-0 mb-4">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button rounded-top" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseTOne"
+                                    style="font-size: 1.2rem; ">
+                                    Why should I choose UpStyle?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body my-2">
+                                    <h5>Sustainable fashion with real impact</h5>
+                                    <p>UpStyle offers sustainable fashion solutions, helping you reduce waste while
+                                        giving your old clothes a new purpose.</p>
+                                    <p>Our services include upcycling, donation programs, and resale options all
+                                        designed to create environmental and economic benefits.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-4">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed rounded-top" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo" style="font-size: 1.2rem; ">
+                                    How can I reduce my clothing waste?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body my-2">
+                                    <h5>Simple steps to a more sustainable wardrobe</h5>
+                                    <p>You can minimize clothing waste by repurposing, donating, or learning new
+                                        upcycling techniques. Join our workshops to explore creative ways to extend the
+                                        life of your garments.</p>
+                                    <p>UpStyle also provides eco-friendly disposal methods to ensure your fashion
+                                        choices remain sustainable.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed rounded-top" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree" style="font-size: 1.2rem; ">
+                                    How do UpStyle's impact tracking and rewards work?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body my-2">
+                                    <h5>Earn rewards for making a difference</h5>
+                                    <p>Every sustainable action—donating, upcycling, or participating in challenges—is
+                                        tracked through our <i>Eco-Impact System</i>. </p>
+                                    <p>You'll accumulate <i>points and badges</i> based on your contributions, which can
+                                        be
+                                        redeemed for <i>exclusive rewards</i>. The more you engage, the greater your
+                                        positive
+                                        impact on the environment!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="FAQ-img RotateMoveRight rounded">
+                        <img src="img/faqq-modified.png" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ End -->
+
+
+    <!-- Reward Start -->
+    <div class="container-fluid reward py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                <h4 class="text-primary">Eco-Friendly Rewards</h4>
+                <h1 class="display-5 mb-4">Earn Rewards by Saving Fashion Waste!</h1>
+                <p style="font-size: 1.2rem; " class="mb-0">
+                    Complete missions to upcycle clothing waste into useful materials and earn exclusive rewards!
+                    Each reward supports sustainability and encourages a greener lifestyle.
+                </p>
+            </div>
+            <div class="row g-5 justify-content-center">
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="reward-item bg-light rounded text-center">
+                        <div class="text-center text-primary border-bottom d-flex flex-column justify-content-center p-4"
+                            style="width: 100%; height: 160px;">
+                            <p class="fs-2 fw-bold text-uppercase mb-0">Eco Starter</p>
+                            <div class="d-flex justify-content-center">
+                                <p class="mb-0"><span class="display-5">10</span> Points</p>
+                            </div>
+                        </div>
+                        <div class="text-start p-5">
+                            <p><i class="fas fa-gift text-success me-1"></i> Recycled Fabric Tote Bag</p>
+                            <p><i class="fas fa-gift text-success me-1"></i> Digital Certificate of Sustainability</p>
+                            <p><i class="fas fa-gift text-success me-1"></i> 10% Discount on Upcycled Products</p>
+                            <a href="reward.html">
+                                <button class="btn btn-light rounded-pill py-2 px-5" type="button">Claim Reward</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="reward-item bg-light rounded text-center">
+                        <div class="reward-item-offer">Popular</div>
+                        <div class="text-center text-primary border-bottom d-flex flex-column justify-content-center p-4"
+                            style="width: 100%; height: 160px;">
+                            <p class="fs-2 fw-bold text-uppercase mb-0">Green Champion</p>
+                            <div class="d-flex justify-content-center">
+                                <p class="mb-0"><span class="display-5">50</span> Points</p>
+                            </div>
+                        </div>
+                        <div class="text-start p-5">
+                            <p><i class="fas fa-gift text-success me-1"></i> Reusable Stainless Steel Water Bottle</p>
+                            <p><i class="fas fa-gift text-success me-1"></i> Eco-Friendly Notebook</p>
+                            <p><i class="fas fa-gift text-success me-1"></i> 20% Discount on Sustainable Clothing</p>
+                            <a href="reward.html">
+                                <button class="btn btn-light rounded-pill py-2 px-5" type="button">Claim Reward</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="reward-item bg-light rounded text-center">
+                        <div class="text-center text-secondary border-bottom d-flex flex-column justify-content-center p-4"
+                            style="width: 100%; height: 160px;">
+                            <p class="fs-2 fw-bold text-uppercase mb-0">Eco Hero</p>
+                            <div class="d-flex justify-content-center">
+                                <p class="mb-0"><span class="display-5">100</span> Points</p>
+                            </div>
+                        </div>
+                        <div class="text-start p-5">
+                            <p><i class="fas fa-gift text-success me-1"></i> Upcycled Denim Backpack</p>
+                            <p><i class="fas fa-gift text-success me-1"></i> Free Sustainable Workshop Pass</p>
+                            <p><i class="fas fa-gift text-success me-1"></i> 30% Discount on Eco-Friendly Fashion</p>
+                            <a href="reward.html">
+                                <button class="btn btn-light rounded-pill py-2 px-5" type="button">Claim Reward</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reward End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-dark mb-4">IDNCycle.co </h4>
+                        <a href="index2.html"> Why UpStyle?</a>
+                        <a href="feature.html"> Our Features</a>
+                        <a href="about.html"> About Us</a>
+                        <a href="blog.html"> Our Blog</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-dark">Quick Links</h4>
+                        <a href="about.html"> About Us</a>
+                        <a href="contact.html"> Contact Us</a>
+                        <a href="contact.html"> Privacy Policy</a>
+                        <a href="contact.html"> Terms & Conditions</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-dark">Services</h4>
+                        <a href="service.html"> Eco-Guide</a>
+                        <a href="service.html"> Consultation</a>
+                        <a href="service.html"> Workshop</a>
+                        <a href="service.html"> Notification</a>
+                        <a href="service.html"> Environment Tracking</a>
+                        <a href="service.html"> Eco-Impact Personal</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-dark">Contact Info</h4>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i> Jl. Raya Uluwatu, Kuta Selatan,
+                            Bali</a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> upstyleforus@gmail.com</a>
+                        <a href=""><i class="fas fa-phone me-2"></i> +62 361 392 6140</a>
+                        <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +62 361 237 1459</a>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-white"><a href="index2.html"><i
+                                class="fas fa-copyright text-light me-2"></i>UpStyle</a>,
+                        All right reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-white">
+                    Designed By <a class="border-bottom" href="index2.html">3Mode</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

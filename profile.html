@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UpStyle - Fashion Upcycling</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .bg-breadcrumb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 110vh;
+            background-color: #f8f9fa;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .profile-container {
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            animation: fadeInUp 0.8s;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            border: 4px solid #9ebde3;
+            transition: transform 0.3s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+
+        .profile-pic i {
+            font-size: 60px;
+            color: #9ebde3;
+        }
+
+        .profile-details div {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .profile-details h3 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .profile-details p,
+        .password-container {
+            background: #f5f5f5;
+            padding: 12px;
+            border-radius: 10px;
+            transition: box-shadow 0.3s;
+        }
+
+        .profile-details p:hover,
+        .password-container:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .password-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .password-container input {
+            border: none;
+            background: transparent;
+            outline: none;
+            width: 90%;
+        }
+
+        .password-container .fas {
+            cursor: pointer;
+            color: #9ebde3;
+        }
+
+        .btn-update {
+            background: #253f7c;
+            color: #fff;
+            padding: 14px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: transform 0.3s;
+            display: inline-block;
+        }
+
+        .btn-update:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-breadcrumb">
+        <ul class="breadcrumb-animation">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- Profile Start -->
+
+    <div class="profile-container">
+        <div class="profile-pic">
+            <i class="fas fa-regular fa-user"></i>
+        </div>
+        <div class="profile-details">
+            <div>
+                <h3>Name</h3>
+                <p>Charlotte King</p>
+            </div>
+
+            <div>
+                <h3>Email Address</h3>
+                <p>@johnkinggraphics@gmail.com</p>
+            </div>
+
+            <div>
+                <h3>Phone Number</h3>
+                <p>+62 816 489 5302</p>
+            </div>
+
+            <div>
+                <h3>Username</h3>
+                <p>@johnkinggraphics</p>
+            </div>
+
+            <div>
+                <h3>Password</h3>
+                <div class="password-container">
+                    <input type="password" value="UpStyle" readonly />
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
+        </div>
+        <a href="UpdateProfile.html" class="btn-update">Update Profile</a>
+    </div>
+
+    <!-- Profile End -->
+
+    <script>
+        document.querySelector('.fa-eye').addEventListener('click', function () {
+            const passwordInput = this.previousElementSibling;
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                this.classList.replace('fa-eye', 'fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                this.classList.replace('fa-eye-slash', 'fa-eye');
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
